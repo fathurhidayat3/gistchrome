@@ -1,7 +1,3 @@
-chrome.browserAction.onClicked.addListener(function(tab) {
-    alert("adasd");
-});
-
 var fuser = document.getElementById("fuser");
 var fname = document.getElementById("fpass");
 var fname = document.getElementById("fname");
