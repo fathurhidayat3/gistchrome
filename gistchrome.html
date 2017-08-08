@@ -1,0 +1,61 @@
+<!-- saved from url=(0080)https://developer.chrome.com/extensions/examples/tutorials/getstarted/popup.html -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+    input, textarea {
+        margin-bottom: 7px;
+        margin-right: 3%;
+    }
+
+    h3 {
+    	margin-bottom: 0;
+    }
+
+    .container {
+        width: 250px;
+        position: relative;
+    }
+
+    .colh {
+        width: 46%;
+    }
+
+    .col, #fresult {
+        width: 97%;
+    }
+
+    #fcontent {
+        height: 100px;
+    }
+
+    #fresult {
+        overflow-x: scroll;
+    }
+
+    .pull-right {
+    	position: absolute;
+    	right: 5px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>GistChrome<span class="pull-right" id="fhelp">?</span></h3><hr>
+        <form>
+            <input type="text" class="colh" id="fuser" placeholder="Username">
+            <input type="password" class="colh" id="fpass" placeholder="Password">
+            <input type="text" class="col" id="fname" placeholder="Filename.extension">
+            <input type="text" class="col" id="fdesc" placeholder="Description">
+            <textarea class="col" id="fcontent" placeholder="Paste Code Here"></textarea>
+            <input type="button" class="col" id="fbutton" value="Add">
+        </form>
+        <div id="fresult"></div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="gistchrome.js"></script>
+</body>
+
+</html>
